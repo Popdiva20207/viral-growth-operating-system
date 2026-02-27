@@ -1,26 +1,18 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "New project",
+  "summary": "Web app with vibrant color scheme, animations, hero section, testimonials, countdown timer, image carousel, smooth scroll, and Internet Identity login. Pricing tier fix needed.",
   "architectural_notes": [],
   "known_issues": [
-    "404 canister id not found error on production deployment (Version 8)"
+    "Elite tier price incorrectly set; should be $99"
   ],
   "isFixRequest": true,
   "existing_features": [
     {
-      "id": "feature-ensure-the-correct-canister-id-is-embedded-in-frontend-index-html-meta-tag-so-the-icp0-io-gateway-can-resolve-the-frontend-canister-verify-the-canister-id-in-the-meta-tag-matches-the-deployed-frontend-canister-id-exactly-and-that-it-is-present-at-page-load-before-any-js-executes",
-      "title": "Ensure the correct canister ID is embedded in frontend/index.html meta tag so the ICP0.io gateway can resolve the frontend canister. Verify the canister ID in the meta tag matches the deployed frontend canister ID exactly, and that it is present at page load before any JS executes.",
+      "id": "feature-update-the-elite-tier-price-display-on-the-pricingpage-to-show-99-per-month-instead-of-the-current-incorrect-price",
+      "title": "Update the Elite tier price display on the PricingPage to show $99 (per month) instead of the current incorrect price.",
       "reqIds": [
         "REQ-1"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-audit-the-dfx-json-and-canister-configuration-to-confirm-that-frontend-and-backend-canister-ids-are-consistently-defined-and-that-the-deployment-targets-the-correct-network-ic-mainnet-fix-any-misconfigured-canister-ids-or-network-targets",
-      "title": "Audit the dfx.json and canister configuration to confirm that frontend and backend canister IDs are consistently defined and that the deployment targets the correct network (ic mainnet). Fix any misconfigured canister IDs or network targets.",
-      "reqIds": [
-        "REQ-3"
       ],
       "version": 1
     }
@@ -28,14 +20,15 @@
   "new_feature_requests": [
     {
       "id": "AR-2",
-      "summary": "Ensure the backend canister ID referenced in the frontend actor configuration (useActor.ts and any generated declarations) matches the deployed backend canister ID. Regenerate or update canister ID bindings if there is a mismatch.",
+      "summary": "Ensure the Elite tier price in the backend (if stored or referenced in main.mo, e.g. for Stripe checkout amount or plan metadata) reflects $99.",
       "reqIds": [
         "REQ-2"
       ],
       "status": "pending"
     }
   ],
-  "projectName": "Fix 404 canister ID not found error on production",
+  "gameProjectType": "none",
+  "projectName": "Viral Growth OS",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }
